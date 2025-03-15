@@ -1,7 +1,7 @@
 const employees = [
-    { id: 1, name: 'John Doe', age: 30, department: 'IT', salary: 50000 },
-    { id: 2, name: 'Alice Smith', age: 28, department: 'HR', salary: 45000 },
-    { id: 3, name: 'Bob Johnson', age: 35, department: 'Finance', salary: 60000 },
+    { id: 1, name: 'Metin Altay', age: 30, department: 'IT', salary: 50000, specializaion: 'javascript' },
+    { id: 2, name: 'Alice Smith', age: 28, department: 'HR', salary: 45000 , specializaion: 'Python'},
+    { id: 3, name: 'Bob Johnson', age: 35, department: 'Finance', salary: 60000, specializaion: 'java' },
     //... More employee records can be added here
   ];
 
@@ -35,3 +35,10 @@ function findEmployeeById(employeeId) {
     }
 }
 
+function findEmployee(){
+
+    const employeeFindBy = employees.filter(employee => employee.specializaion === 'javascript');
+    console.log(employeeFindBy);
+   const findBySpec = employeeFindBy.map(employee => `<p>${employee.id}: ${employee.name}: ${employee.age}- ${employee.department}-  ${employee.specializaion}- $${employee.salary}</p>`)
+   document.getElementById('employeesDetails').innerHTML= findBySpec;
+}
