@@ -6,8 +6,10 @@
         // Check if inputs are valid numbers
         if (!isNaN(num1) && !isNaN(num2)) {
         // Perform the operation
-                        let result = multiply(num1, num2);
-    
+                       // let result = multiply(num1, num2);
+                        //let result = sum(num1, num2);
+                        //let result = Math.round(division(num1, num2));
+                        let result = Math.round(subtraction(num1, num2));
                         // Display the result
                         displayResult(result);
                     } else {
@@ -22,7 +24,30 @@
                     // Multiply the numbers
                     return a * b;
                 }
+
+                function sum(a, b) {
+                    // Introduce a debugger statement to pause execution
+                    debugger;
     
+                    // sum the numbers
+                    return a + b;
+                }
+    
+                function division(a, b) {
+                    // Introduce a debugger statement to pause execution
+                    debugger;
+    
+                    // division the numbers
+                    return a / b;
+                }
+                function subtraction(a, b) {
+                    // Introduce a debugger statement to pause execution
+                    debugger;
+    
+                    // subtraction the numbers
+                    return a - b;
+                }
+               
                 function displayResult(result) {
                     // Display the result in the paragraph element
                     const resultElement = document.getElementById('result');
