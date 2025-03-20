@@ -1,0 +1,23 @@
+{
+    "news": [
+        {"title": "Software bug at firm left NHS data 'vulnerable to hackers",
+         "description": "The NHS is \"looking into\" allegations that patient data was left vulnerable to hacking due to a software flaw at a private medical services company.",
+         "subText": "Medefer's system allows patients to book virtual appointments with doctors, and gives those clinicians access to the appropriate patient data."
+     
+    
+        },
+        {"title": "The software engineer who discovered the flaw",
+        "description": "Medefer says there is no evidence the flaw had been in place that long and stressed that patient data has not been compromised.",
+         "subText": "In late February the company commissioned an external security agency to undertake a review of its data management systems."
+     
+    
+        },
+
+        {"title": "Software bug at firm left NHS data 'vulnerable to hackers",
+         "description": "The problem was in bits of software",
+         "subText": "The engineer says that at Medefer those APIs were not properly secured, and could potentially have been accessed by outsiders, who would have been able to see patient information."
+     
+    
+        }
+    ]
+}
